@@ -132,8 +132,8 @@ function($)
 							
 							if(srcType == "videoMp4") {
 								htmlContent = 	'<video class="element" style="height: 100%; width: 100%" tabindex="0" preload controls>';
-								htmlContent += 	'<source type="video/mp4" src="../Style%20Library/video/test.mp4">';
-								htmlContent +=	'<source type="video/webm" src="../Style%20Library/video/test.webm">';
+								htmlContent += 	'<source type="video/mp4" src="../Resources/video/test.mp4">';
+								htmlContent +=	'<source type="video/webm" src="../Resources/video/test.webm">';
 								slideshowContent.append($("<li>").addClass("elemContainer v-center").append($("<div>").addClass("element").addClass(videoClass).append(htmlContent)));			
 							}
 							

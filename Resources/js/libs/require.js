@@ -35,7 +35,7 @@ b.xhtml?document.createElementNS("http://www.w3.org/1999/xhtml","html:script"):d
 O),s=s.replace(Q,""),g.jsExtRegExp.test(s)&&(s=I),q.deps=q.deps?q.deps.concat(s):[s],!0});define=function(b,c,d){var e,g;"string"!==typeof b&&(d=c,c=b,b=null);H(c)||(d=c,c=null);!c&&G(d)&&(c=[],d.length&&(d.toString().replace(ka,"").replace(la,function(b,d){c.push(d)}),c=(1===d.length?["require"]:["require","exports","module"]).concat(c)));if(M){if(!(e=J))N&&"interactive"===N.readyState||T(document.getElementsByTagName("script"),function(b){if("interactive"===b.readyState)return N=b}),e=N;e&&(b||
 (b=e.getAttribute("data-requiremodule")),g=F[e.getAttribute("data-requirecontext")])}(g?g.defQueue:R).push([b,c,d])};define.amd={jQuery:!0};g.exec=function(b){return eval(b)};g(q)}})(this);
 
-var baseUrl = (document.location.hostname.indexOf("javastg") != -1) ? "../Style%20Library/js" : "/Style%20Library/js";
+var baseUrl = (document.location.hostname.indexOf("javastg") != -1) ? "../Resources/js" : "/Resources/js";
 
 require.config({
 	baseUrl: baseUrl,

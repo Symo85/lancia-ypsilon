@@ -1,0 +1,93 @@
+#main-header {
+	box-sizing: border-box;
+	height: 6rem;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#main-header:after {
+	content: "";
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ccc;
+}
+#main-header .main-logo,
+#main-header .logo-you {
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 80px;
+	z-index: 9;
+}
+#main-header .main-logo *, #main-header .logo-you * {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+#main-header .main-logo {
+	background-image: url("../../../img/logos/logo-lancia.png");
+	left: 0;
+}
+#main-header .logo-you {
+	background-image: url("../../../img/logos/logo-lancia-you.png");
+	right: 0;
+}
+
+/* MAIN NAV */
+#main-nav .level-0 {
+  height: 6rem;
+  line-height: 6rem;
+  background-color: rgba(255,255,255,0.9);
+}
+#main-nav .level-0:first-child {
+  padding-left: 80px;
+}
+#main-nav .panel {
+    display: block;
+    left: 0;
+    max-height: 0;
+    right: 0;
+    top: 100%;
+	position: absolute;
+   /* visibility: hidden;*/
+}
+#main-nav .level-0 > li > span,
+#main-nav .level-0 > li > a {
+    text-transform: uppercase;
+	display: block;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+#main-nav .level-0 + .level-0 {
+	background-color: rgba(58,63,88,0.9);
+	padding-right: 80px;
+}
+/*#main-nav .level-0 + .level-0:after {
+	background-image: url("../../../img/logos/logo-lancia-you.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	content: "";
+    display: block;
+    height: 100%;
+    width: 80px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}*/
+/*#main-nav .logo-you {
+    height: 100%;
+    width: 80px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}*/
+#main-nav .level-0 + .level-0 > li > span,
+#main-nav .level-0 + .level-0 > li > a {
+    color: #fff;
+}

@@ -432,26 +432,30 @@ big, .txt-big {
 	border-bottom: 2px solid #fff;
 	transition: all 0.5s;
 	position: relative;
-	right: -230px;
-	width: 280px;
+	right: -200px;
+	width: 250px;
 }
 #cta-nav li:hover {
 	right: 0;
 }
 #cta-nav li .cta-icon {
 	overflow: hidden;
-	transition: all 0.3s;
+	/*transition: all 0.5s;*/
 }
 #cta-nav li:hover .cta-icon {
 	background-color: #f1f1f1;
+	position: absolute;
+	right: 0;
 }
 #cta-nav li:hover .cta-icon img {
 	left: -100%;
 }
 #cta-nav li a {
+	display: block;
+	height: 50px;
+	line-height: 50px;
 	text-transform: uppercase;
 	vertical-align: middle;
-	display: block;
 }
 #cta-nav li a > * {
 	text-transform: uppercase;

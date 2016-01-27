@@ -673,7 +673,7 @@ function createMultiselection(Multiselection)
 	else // the world
 		s.appendChild(document.createTextNode(css));
 	head.appendChild(s);
-})('..Style%20Library/css/');
+})('..Resources/css/');
 /* */
 
 

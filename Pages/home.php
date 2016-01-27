@@ -16,9 +16,7 @@
 <body>
 	<div id="wrapper">
 		<!-- Header -->
-		<header id="main-header" class="row">
-			<?php include '../inc/header.html';?>
-		</header>
+		<?php include '../inc/header.html';?>
 		<!-- End header -->
 		
 		<!-- Page-content -->
