@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'HelveticaNeueThinCondensed';
+	src: url('typography/helveticaneueltw1g-thcn-webfont.eot');
+	src: url('typography/helveticaneueltw1g-thcn-webfont.eot?#iefix') format('embedded-opentype'),
+		url('typography/helveticaneueltw1g-thcn-webfont.ttf') format('truetype'),
+		url('typography/helveticaneueltw1g-thcn-webfont.svg#HelveticaNeueLTW1G37ThCn') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCondensed';
+	src: url('typography/helveticaneueltw1g-cn-webfont.eot');
+	src: url('typography/helveticaneueltw1g-cn-webfont.eot?#iefix') format('embedded-opentype'),
+		url('typography/helveticaneueltw1g-cn-webfont.ttf') format('truetype'),
+		url('typography/helveticaneueltw1g-cn-webfont.svg#HelveticaNeueLTW1G57Condensed') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueBoldCondensed';
+	src: url('typography/helveticaneueltw1g-bdcn-webfont.eot');
+	src: url('typography/helveticaneueltw1g-bdcn-webfont.eot?#iefix') format('embedded-opentype'),
+		url('typography/helveticaneueltw1g-bdcn-webfont.ttf') format('truetype'),
+		url('typography/helveticaneueltw1g-bdcn-webfont.svg#HelveticaNeueLTW1G77BdCn') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueMediumCondensed';
+	src: url('typography/helveticaneueltw1g-mdcn-webfont.eot');
+	src: url('typography/helveticaneueltw1g-mdcn-webfont.eot?#iefix') format('embedded-opentype'),
+		url('typography/helveticaneueltw1g-mdcn-webfont.ttf') format('truetype'),
+		url('typography/helveticaneueltw1g-mdcn-webfont.svg#HelveticaNeueLTW1G67MdCn') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'safariFix';
+	src: url('typography/safariFix.svg#safariFix') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

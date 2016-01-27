@@ -1,0 +1,10 @@
+/*@media screen and (max-width: 767px) {*/
+@media screen and (max-width: 992px) {
+#wrapper {
+	min-height: 0;
+	padding-bottom: 0;
+}
+#wrapper .mobile-visible.hidden {
+	display: none !important;
+}
+}
