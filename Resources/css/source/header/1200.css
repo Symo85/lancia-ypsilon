@@ -40,54 +40,76 @@
 }
 
 /* MAIN NAV */
-#main-nav .level-0 {
-  height: 6rem;
-  line-height: 6rem;
-  background-color: rgba(255,255,255,0.9);
+#main-nav .level-0 > li {
+	height: 6rem;
+	line-height: 6rem;
 }
 #main-nav .level-0:first-child {
-  padding-left: 80px;
+	background-color: rgba(255,255,255,0.9);
+	padding-left: 80px;
 }
-#main-nav .panel {
-    display: block;
-    left: 0;
-    max-height: 0;
-    right: 0;
-    top: 100%;
-	position: absolute;
-   /* visibility: hidden;*/
+#main-nav .level-0, #main-nav .level-0 > li {
+	position: static;
 }
 #main-nav .level-0 > li > span,
 #main-nav .level-0 > li > a {
     text-transform: uppercase;
-	display: block;
 	text-align: center;
 	letter-spacing: 0.1em;
+	width: 100%;
 }
 #main-nav .level-0 + .level-0 {
 	background-color: rgba(58,63,88,0.9);
 	padding-right: 80px;
 }
-/*#main-nav .level-0 + .level-0:after {
-	background-image: url("../../../img/logos/logo-lancia-you.png");
-	background-position: center center;
-	background-repeat: no-repeat;
-	content: "";
-    display: block;
-    height: 100%;
-    width: 80px;
-	position: absolute;
-	top: 0;
-	right: 0;
-}*/
-/*#main-nav .logo-you {
-    height: 100%;
-    width: 80px;
-	position: absolute;
-	top: 0;
-	right: 0;
-}*/
 #main-nav .level-0 + .level-0 > li > span,
 #main-nav .level-0 + .level-0 > li > a {
     color: #fff;
+}
+#main-nav .submenu {
+	background-color: transparent;
+	background-image: url("../../../img/bg/bg_menu.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	display: block;
+	left: 0;
+	max-height: inherit;
+	position: absolute;
+	right: 0;
+	top: 6rem;
+	width: 100%;
+}
+#main-nav .submenu .level-1 > li {
+	width: 100%;
+	font-family: 'kepler_stditalic';
+}
+#main-nav .submenu .multi-triggers {
+	background-color: #f1f1f1;
+	border-top: 1px solid #fff;
+	box-sizing: border-box;
+	clear: left;
+	float: left;
+	font-size: 2em;
+	height: 3em;
+	line-height: 3em;
+	margin: 0;
+	padding: 0 1.5em;
+	text-transform: uppercase;
+	width: 25%;
+}
+#main-nav .submenu .multi-triggers.selected {
+	background-color: #fff;
+}
+#main-nav .submenu .multi-triggers sub {
+	font-size: 14px;
+	left: -2em;
+	position: relative;
+	top: 0.1em;
+}
+#main-nav .submenu .multi-contents {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 75%;
 }

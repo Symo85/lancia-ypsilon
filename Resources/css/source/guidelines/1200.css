@@ -11,7 +11,7 @@ html, body {
 	width: 100%;
 }
 html, body {
-	font-size: 14px;
+	font-size: 15px;
 	color: #000;
 	background-color: #fff;
 	font-family: 'HelveticaNeueCondensed',Arial,sans-serif;
@@ -233,13 +233,16 @@ big, .txt-big {
 	color: #fff !important;
 }
 .txt-grey, .txt-grey > * {
-	color: #606060 !important;
+	color: #666666 !important;
 }
 .txt-red, .txt-red > * {
 	color: #c3231e !important;
 }
 .txt-black, .txt-black > * {
 	color: #000 !important;
+}
+.txt-blue, .txt-blue > * {
+	color: #0069b4 !important;
 }
 .title, .main-title, .sub-title {
 	text-transform: uppercase;
@@ -254,21 +257,20 @@ big, .txt-big {
 	color: #fff !important;
 }
 .bg-grey {
-	background-color: #eeeeee !important;
+	background-color: #999999 !important;
 }
 .bg-grey_light {
-	background-color: #f6f6f6 !important;
+	background-color: #f1f1f1 !important;
 }
 .bg-grey_dark {
-	background-color: #e2e1e1 !important;
-}
-.bg-grey_darkest {
-	background-color: #606060 !important;
-	color: #fff !important;
+	background-color: #666666 !important;
 }
 .bg-red {
 	background-color: #c3231e !important;
 	color: #fff !important;
+}
+.bg-blue {
+	background-color: #0069b4 !important;
 }
 
 /* LINES & BORDERS */

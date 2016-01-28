@@ -688,15 +688,8 @@ require(['jquery'], function($)
 
 	$(document).ready(function() {
 		
-
 		/* chiudo accordion e menu quando clicco al di fuori di essi */
 		$(document).on('click', function(e){
-			// fake select
-			if($('.fakeSelect.open').length) {
-				var container = $('.fakeSelect.open');
-				if(!container.is(e.target) && container.has(e.target).length === 0)
-					container.removeClass('open');
-			}
 			// close accordion menu
 			if($('.accordion').length || $('.accordion-menu').length) {
 				var $accordion = $('.accordion.open, .accordion-menu.open');
@@ -707,13 +700,7 @@ require(['jquery'], function($)
 				if($closable.length && !$closable.is(e.target) && $closable.has(e.target).length === 0)
 					$closable.find('.accordion-trigger').trigger('click');
 			}
-			if($('.autoCompl-container').length) {
-				var container = $('.autoCompl-container');
-				if(!container.is(e.target) && container.has(e.target).length === 0)
-					container.remove();
-			}
 		});
-
 		
 		/* check if custom checkbox are checked */
 		$('input[type="checkbox"]').not('.preselected').prop( "checked", false);
@@ -741,7 +728,7 @@ require(['jquery'], function($)
 		//customScroll();
 		
 		/* window scroll */
-		pageWindow.on("scroll", function() {
+		pageWindow.one("scroll", function() {
 		   pageScrolled = true;
 		});
 		
@@ -780,37 +767,5 @@ require(['jquery'], function($)
 		}
 		
 	});
-	
-	function jScrollPaneReInit() {
-		destroyScroll();
-		customScroll();
-	}
-	
-	function fakeSelUpdateVal(sel, firstTime) {
-		var txt = sel.text(),
-			val = sel.data('value'),
-			fakeSelect = sel.closest('.fakeSelect');
-		fakeSelect.find('.voiceSelected').text(txt).data('value', val);
-		fakeSelect.addClass('selected').siblings('.selected').removeClass('selected');
-		//console.log(firstTime);
-		if(fakeSelect.closest('li').is('#select-lang') && !firstTime) {
-			$.ajax({
-				url: urlCall + 'ChangeLanguage.aspx?lang=' + val,
-				jsonp: "callback",
-				dataType: "jsonp",
-				success: function(response) {
-					//console.log(response);
-					location.reload(true);
-				}
-			});
-		}
-	}
-	
-	function refreshPage(time) {
-		setTimeout(function(){
-		   location.reload(true);
-		   //refreshPage(time);
-		}, time);
-	}
 
 });

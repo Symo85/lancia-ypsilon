@@ -29,14 +29,17 @@
 }
 
 @font-face {
-	font-family: 'HelveticaNeueMediumCondensed';
-	src: url('typography/helveticaneueltw1g-mdcn-webfont.eot');
-	src: url('typography/helveticaneueltw1g-mdcn-webfont.eot?#iefix') format('embedded-opentype'),
-		url('typography/helveticaneueltw1g-mdcn-webfont.ttf') format('truetype'),
-		url('typography/helveticaneueltw1g-mdcn-webfont.svg#HelveticaNeueLTW1G67MdCn') format('svg');
+	font-family: 'kepler_stditalic';
+	src: url('typography/keplerstd-italic-webfont.eot');
+    src: url('typography/keplerstd-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('typography/keplerstd-italic-webfont.woff2') format('woff2'),
+         url('typography/keplerstd-italic-webfont.woff') format('woff'),
+         url('typography/keplerstd-italic-webfont.ttf') format('truetype'),
+         url('typography/keplerstd-italic-webfont.svg#kepler_stditalic') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
+
 @font-face {
 	font-family: 'safariFix';
 	src: url('typography/safariFix.svg#safariFix') format('svg');
